@@ -1,0 +1,70 @@
+/* Общие стили */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Стили для калькулятора */
+.calculator {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 350px;
+}
+
+.display {
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.keypad button {
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  font-size: 20px;
+  padding: 15px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.keypad button:hover {
+  background-color: #d0d0d0;
+  transform: translateY(-2px);
+}
+
+.keypad button.operator {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.keypad button.operator:hover {
+  background-color: #ffa726;
+}
+
+.keypad button.equals {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.keypad button.equals:hover {
+  background-color: #66bb6a;
+}
